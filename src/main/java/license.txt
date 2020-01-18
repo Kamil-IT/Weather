@@ -1,0 +1,10 @@
+Michael Oberwasserlechner
+m.oberwasserlechner@byteowls.com
+https://github.com/moberwasserlechner
+This file list of code:
+    models/OpenCage/*
+    support/UnixTimestampDeserializer
+    service/JOpenCageGeocoderClient
+
+Weather forecast is getting from "Dark Sky" https://darksky.net/
+Geolocation i getting from "OpenCage" https://opencagedata.com/
