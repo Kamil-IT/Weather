@@ -1,9 +1,9 @@
 package models;
 
-import service.JOpenCageGeocoderClient;
-import models.OpenCage.JOpenCageResponse;
-import models.OpenCage.JOpenCageReverseRequest;
+import com.byteowls.jopencage.model.JOpenCageResponse;
+import com.byteowls.jopencage.model.JOpenCageReverseRequest;
 import properties.WeatherPropertiesBuilder;
+import service.JOpenCageGeocoderClient;
 
 public class Location {
     private String city;

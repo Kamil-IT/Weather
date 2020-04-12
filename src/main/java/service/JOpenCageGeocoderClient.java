@@ -1,10 +1,11 @@
 package service;
 
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.util.Map.Entry;
-
+import com.byteowls.jopencage.model.JOpenCageForwardRequest;
+import com.byteowls.jopencage.model.JOpenCageRequest;
+import com.byteowls.jopencage.model.JOpenCageResponse;
+import com.byteowls.jopencage.model.JOpenCageReverseRequest;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.HttpResponseException;
 import org.apache.http.client.ResponseHandler;
@@ -16,12 +17,11 @@ import org.apache.http.impl.client.HttpClientBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import models.OpenCage.JOpenCageForwardRequest;
-import models.OpenCage.JOpenCageRequest;
-import models.OpenCage.JOpenCageResponse;
-import models.OpenCage.JOpenCageReverseRequest;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.Map.Entry;
+
 
 public class JOpenCageGeocoderClient {
 
